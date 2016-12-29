@@ -1,0 +1,18 @@
+group 'com.rhm'
+version '0.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'net.sourceforge.tess4j', name: 'tess4j', version: '3.2.1'
+    compile 'org.ghost4j:ghost4j:1.0.1'
+
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
